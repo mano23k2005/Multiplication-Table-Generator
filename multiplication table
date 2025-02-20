@@ -1,0 +1,25 @@
+
+#Program:Multiplication Table Generator
+
+# Multiplication Table Generator
+
+# Function to print the multiplication table
+def print_table(number, limit):
+    print(f"\nMultiplication Table for {number}:")
+    for i in range(1, limit + 1):
+        print(f"{number} x {i} = {number * i}")
+
+# Main program
+while True:
+    print("\n1. Generate Table\n2. Exit")
+    choice = input("Enter your choice: ")
+
+    if choice == "1":
+        num = int(input("Enter a number: "))
+        lim = int(input("Enter the limit: "))
+        print_table(num, lim)
+    elif choice == "2":
+        print("Goodbye!")
+        break
+    else:
+        print("Invalid choice. Try again.")
